@@ -1,8 +1,9 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: grid;
-    grid-template-columns: 1.5fr 2fr 2fr 2fr;
-    grid-template-rows: 1fr 5fr 5fr;
+    grid-template-columns: 1.5fr 4fr 2fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
     margin:0;
 }
 /*This is nav section*/
@@ -42,12 +43,13 @@ body{
 /*^ This is nav section ^*/
 /*This is header section*/
 #header{
-    grid-column: 2/5;
+    grid-column: 2/4;
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-left: 3rem;
+    margin-bottom: 1rem;
 }
 #searchBar{
     grid-column: 1/2;
@@ -83,6 +85,9 @@ input{
 .noMargin{
     margin:0;
 }
+.marginLeft{
+    margin-left: 1.5rem;
+}
 /*^ This is header section ^*/
 /* This is mini profile section */
 #miniProfile{
@@ -114,3 +119,42 @@ button{
     margin:0 1rem;
 }
 /*^ This is mini profile section ^*/
+/*This is projects section*/
+#projects{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(226, 232, 240);
+}
+#projectsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 25vh;
+}
+.projectCard{
+    background-color: white;
+    height: 10rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    border-left: solid orange 0.5rem;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+.projectIcons{
+    display: flex;
+    justify-content: end;
+}
+.projectName{
+    font-weight: bold;
+    margin:1rem 0 0 2rem;
+    grid-row: 1/2;
+}
+.projectText{
+    font-size: 0.7rem;
+    width: 15rem;
+    margin-left: 2rem;
+}
+/*^ This is projects section ^*/
+/* This is side section*/
+
+/*^ This is side section ^*/
