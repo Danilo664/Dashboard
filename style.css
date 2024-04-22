@@ -153,8 +153,74 @@ button{
     font-size: 0.7rem;
     width: 15rem;
     margin-left: 2rem;
+    color: rgb(99, 99, 99);
 }
 /*^ This is projects section ^*/
 /* This is side section*/
-
+#asideInfo{
+    background-color: rgb(226, 232, 240);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#announcements{
+    grid-row: 1/2;
+}
+#trending{
+    grid-row: 2/3;
+}
+.asideCard{
+    height: 15rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slightlyBiggerFont{
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+.announcementName{
+    font-weight: bold;
+    margin:0;
+    font-size: 0.8rem;
+    margin-left:17.5%;
+}
+.announcementText{
+    color: rgb(99, 99, 99);
+    margin:0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 65%;
+    height: 20%;
+    font-size: 0.7rem;
+    margin-left:17.5%;
+}
+.theLine{
+    height: 1px;
+    width: 70%;
+    background-color: gray;
+    align-self: center;
+}
+.trendingCard{
+    height: 15rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.profile{
+    display: flex;
+}
+.profileTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.theGrayText{
+    color:rgb(99, 99, 99);
+}
 /*^ This is side section ^*/
